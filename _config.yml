@@ -18,11 +18,11 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 
 # SNS settings
 RSS: false
-# weibo_username:     wenfengSAT
-zhihu_username:     wenfengSAT
+weibo_username:     大明朝的铜币
+#zhihu_username:     wenfengSAT
 github_username:    wenfengSAT
-facebook_username:  wenfengSAT
-jianshu_username:   wenfengSAT
+#facebook_username:  wenfengSAT
+#jianshu_username:   wenfengSAT
 #twitter_username:   wenfengSAT
 
 
@@ -74,11 +74,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-ga_track_id: ''            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+#ga_track_id: ''            # Format: UA-xxxxxx-xx
+#ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -99,7 +99,7 @@ service-worker: true
 # Friends
 friends: [
    {
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "简书",
+        href: "http://www.jianshu.com/"
     }
 ]
