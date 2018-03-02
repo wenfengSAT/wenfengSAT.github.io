@@ -61,9 +61,9 @@ kramdown:
 
 # Gitalk
 gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4   #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d  #同上
+  enable: true    #是否开启Gitalk评论
+  clientID: 8a5d3d390c3d5a508b8b   #生成的clientID
+  clientSecret: 4672c8bb4123eda57407bd935e7062ff0b861797  #同上
   repo: wenfengSAT.github.io    #仓库名称
   owner: wenfengSAT    #github用户名
   admin: wenfengSAT
