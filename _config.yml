@@ -22,7 +22,7 @@ weibo_username:     大明朝的铜币
 #zhihu_username:     wenfengSAT
 github_username:    wenfengSAT
 #facebook_username:  wenfengSAT
-#jianshu_username:   wenfengSAT
+jianshu_username:   wenfengSAT
 #twitter_username:   wenfengSAT
 
 
@@ -101,5 +101,13 @@ friends: [
    {
         title: "简书",
         href: "http://www.jianshu.com/"
+    },
+	{
+        title: "3304",
+        href: "106.14.191.238:8080/3304/"
+    },
+	{
+        title: "wenfengSAT",
+        href: "106.14.191.238:8080/YYT/"
     }
 ]
