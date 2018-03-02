@@ -8,7 +8,7 @@ yaml 头文件长这样:
 ```
 ---
 layout:     post
-title:      博客标题？
+title:      博客标题
 subtitle:   小标题
 date:       发表日期
 author:     作者
