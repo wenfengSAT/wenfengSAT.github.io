@@ -11,7 +11,7 @@ tags:
     - Nginx
 ---
 
-#CentOS7上搭建Nginx
+>CentOS7上搭建Nginx
 
 #什么是Nginx?
 Nginx ("engine x") 是一个高性能的 HTTP 和 反向代理 服务器，也是一个 IMAP/POP3/SMTP 代理服务器，在高连接并发的情况下Nginx 是 Apache 服务器不错的替代品.其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好.目前中国大陆使用nginx网站用户有：新浪、网易、 腾讯，另外知名的微网志Plurk也使用nginx。 
