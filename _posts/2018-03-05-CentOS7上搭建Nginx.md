@@ -39,7 +39,11 @@ pcre-8.21.tar.gz
 
 nginx-1.2.6.tar.gz
 
-# 第二步:依次安装openssl-fips-2.0.2.tar.gz, zlib-1.2.7.tar.gz, pcre-8.21.tar.gz, nginx-1.2.6.tar.gz
+# 第二步:依次安装
+openssl-fips-2.0.2.tar.gz 
+zlib-1.2.7.tar.gz 
+pcre-8.21.tar.gz 
+nginx-1.2.6.tar.gz
 
 #### 1.安装openssl-fips-2.0.2.tar.gz
 
