@@ -7,8 +7,7 @@ author:     wenfengSAT
 header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
-    - CentOS7
-    - Nginx
+    - Mybatis
 ---
 
 >Mybatis插入数据返回新插入数据id
