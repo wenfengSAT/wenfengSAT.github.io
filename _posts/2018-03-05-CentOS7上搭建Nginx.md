@@ -11,15 +11,15 @@ tags:
     - Nginx
 ---
 
-###CentOS7上搭建Nginx
+#CentOS7上搭建Nginx
 
-##什么是Nginx?
+#什么是Nginx?
 Nginx ("engine x") 是一个高性能的 HTTP 和 反向代理 服务器，也是一个 IMAP/POP3/SMTP 代理服务器，在高连接并发的情况下Nginx 是 Apache 服务器不错的替代品.其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好.目前中国大陆使用nginx网站用户有：新浪、网易、 腾讯，另外知名的微网志Plurk也使用nginx。 
 　　Nginx 作为 负载均衡 服务器： 
 Nginx 既可以在内部直接支持 Rails 和 PHP 程序对外进行服务，也可以支持作为 HTTP 代理服务器对外进行服务。 Nginx 采用 C 进行编写， 不论是系统资源开销还是 CPU 使用效率都比 Perlbal 要好很多。作为邮件代理服务器： 
 　　Nginx 同时也是一个非常优秀的邮件代理服务器（最早开发这个产品的目的之一也是作为邮件代理服务器）， Last.fm 描述了成功并且美妙的使用经验。Nginx 是一个安装非常简单，配置文件非常简洁（还能够支持perl语法）， Bugs非常少的服务器： Nginx 启动特别容易，并且几乎可以做到 7*24 不间断运行，即使运行数个月也不需要重新启动。 你还能够不间断服务的情况下进行软件版本的升级。
  
-##Nginx的安装
+#Nginx的安装
 
 模块依赖性Nginx需要依赖下面3个包
 1. gzip 模块需要 zlib 库 ( 下载: http://www.zlib.net/ )
@@ -112,7 +112,8 @@ nginx-1.2.6.tar.gz
 查看端口
 [root@localhost sbin]# netstat -ntlp 
 
-##Nginx的简单配置文件
+#Nginx的简单配置文件
+
 {% raw %}
 ```hbs
 #user  nobody;
