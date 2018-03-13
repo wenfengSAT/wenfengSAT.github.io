@@ -12,7 +12,7 @@ tags:
 
 >关于kafka、spark浅知识
 
-#为什么搭建Kafka需要zookeeper：
+# 为什么搭建Kafka需要zookeeper：
 
 kafka 很多说不需要安装zk的是因为他们都使用了kafka自带的zk
 至于kafka为什么使用zk，你首先要知道zk的作用, 作为去中心化的集群模式。
@@ -20,12 +20,12 @@ kafka 很多说不需要安装zk的是因为他们都使用了kafka自带的zk
 如果没了zk消费者如何知道呢？如果每次消费者在消费之前都去尝试连接生产者测试下是否连接成功，效率呢？
 所以kafka需要zk，在kafka的设计中就依赖了zk了。
 
-#关于zookeeper：
+# 关于zookeeper：
 
 去中心化的集群模式。
 
 
-#关于kafka：
+# 关于kafka：
 
 Kafka是一种高吞吐量的分布式发布订阅消息系统，它可以处理消费者规模的网站中的所有动作流数据。
 Broker
@@ -41,7 +41,7 @@ Consumer
 Consumer Group
 每个Consumer属于一个特定的Consumer Group（可为每个Consumer指定group name，若不指定group name则属于默认的group）
 
-#关于spark使用：
+# 关于spark使用：
 
 目前我这边能做的只是用java传给kafka,kafka再给spark,spark计算完后再回传给kafka,java程序再接收
 
