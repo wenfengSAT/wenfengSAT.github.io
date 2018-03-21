@@ -2,7 +2,7 @@
 layout:     post
 title:      Bootstrap使用常见问题
 subtitle:   记录一些使用Bootstrap时遇到的问题
-date:       2018-03-03
+date:       2018-03-16
 author:     wenfengSAT
 header-img: img/post-bg-universe.jpg
 catalog: true
