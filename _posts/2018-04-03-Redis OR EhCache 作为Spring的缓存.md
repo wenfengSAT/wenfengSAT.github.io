@@ -8,8 +8,6 @@ header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
     - 缓存
-	- Redis
-	- EhCache
 ---
 # EhCache作为缓存配置 ：
 
