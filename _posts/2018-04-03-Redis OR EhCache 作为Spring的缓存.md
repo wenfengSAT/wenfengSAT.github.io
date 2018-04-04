@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Redis OR EhCache 作为Spring的缓存
-subtitle:   Redis OR EhCache 作为Spring的缓存
+title:      Redis和EhCache作为Spring的缓存
+subtitle:   Redis和EhCache作为Spring的缓存
 date:       2018-04-03
 author:     wenfengSAT
 header-img: img/post-bg-universe.jpg
