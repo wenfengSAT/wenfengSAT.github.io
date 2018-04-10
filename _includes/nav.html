@@ -21,11 +21,11 @@
                     </li>
                     {% for page in site.pages %}{% if page.title %}
                     <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}--{{ page.url | prepend: site.baseurl }}</a>
                     </li>
                     {% endif %}{% endfor %}
 					<li>
-                        <a href="/TEST/">测试</a>
+                        <a href="https://www.baidu.com/">百度-外链</a>
                     </li>
                 </ul>
             </div>
