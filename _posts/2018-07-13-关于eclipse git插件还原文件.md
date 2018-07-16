@@ -43,6 +43,12 @@ tags:
 3.还原之后pull代码，增加自己的代码，提交代码
 
 
+还原单个文件到修改之前
+
+1.选择文件，右键Team--Replace With--HEAD Revision
+
+2.还原之后pull代码，增加自己的代码，提交代码
+
 ```
 {% endraw %}
 
