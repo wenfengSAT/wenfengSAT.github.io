@@ -3,7 +3,7 @@ layout: page
 description: "Simple,So charming..."
 ---
 <style>
-.post_tag > span {
+.post-meta > span {
     width: 20%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -29,7 +29,7 @@ description: "Simple,So charming..."
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-	<p class="post_tag">
+	<p class="post-meta">
 		<span class="glyphicon glyphicon-tags kind">
 			<a href="#">{{ post.tags[0] }}</a>
 		</span>
