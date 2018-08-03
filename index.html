@@ -2,7 +2,15 @@
 layout: page
 description: "Simple,So charming..."
 ---
-
+<style>
+.post_tag > span {
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+}
+</style>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -21,6 +29,11 @@ description: "Simple,So charming..."
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
+	<p class="post_tag">
+		<span class="glyphicon glyphicon-tags kind">
+			<a href="#">{{ post.tags[0] }}</a>
+		</span>
+	</p>
 </div>
 <hr>
 {% endfor %}
