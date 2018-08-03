@@ -3,12 +3,12 @@ layout: page
 description: "Simple,So charming..."
 ---
 <style>
-.post-title > span {
+.post-meta > span {
     width: 140px;
-    float: left;
-	border-bottom: 0.5px solid rgb(218, 214, 214);
-    padding-right: 20px;
-    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
 }
 </style>
 {% for post in paginator.posts %}
@@ -16,9 +16,6 @@ description: "Simple,So charming..."
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
-			<span class="glyphicon glyphicon-tags kind">
-				<a href="/tags/#{{ post.tags[0] }}">{{ post.tags[0] }}</a>
-			</span>
         </h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
@@ -31,6 +28,10 @@ description: "Simple,So charming..."
     </a>
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+		&nbsp;&nbsp;
+		<span class="glyphicon glyphicon-tags kind">
+				<a href="/tags/#{{ post.tags[0] }}">{{ post.tags[0] }}</a>
+		</span>
 	</p>
 </div>
 <hr>
