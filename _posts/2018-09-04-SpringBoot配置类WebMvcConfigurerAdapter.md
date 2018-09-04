@@ -12,16 +12,13 @@ tags:
 
 >SpringBoot配置类WebMvcConfigurerAdapter
 
-```java
 WebMvcConfigurerAdapter配置类其实是Spring内部的一种配置方式，
 采用JavaBean的形式来代替传统的xml配置文件形式进行针对框架个性化定制，
 下面我们来看一下该类内的常用方法。
-```
+
 >本章目标
 
-```java
 继承WebMvcConfigurerAdapter采用JavaBean形式实现个性化配置定制。
-```
 
 >构建项目
 
@@ -63,16 +60,15 @@ import org.springframework.web.servlet.config.annotation.*;
  
 import java.util.List;
  
-/**
- * 自定义配置类实现JavaBean注解形式配置
- * ========================
- * Created with IntelliJ IDEA.
- * User：恒宇少年
- * Date：2017/9/3
- * Time：21:48
- * 码云：http://git.oschina.net/jnyqy
- * ========================
- */
+
+ // 自定义配置类实现JavaBean注解形式配置
+ // ========================
+ // Created with IntelliJ IDEA.
+ // User：恒宇少年
+ // Date：2017/9/3
+ // Time：21:48
+ // 码云：http://git.oschina.net/jnyqy
+ // ========================
 @Configuration
 public class WebConfiguration
     extends WebMvcConfigurerAdapter
@@ -106,7 +102,6 @@ public @interface Configuration {
 }
 ```
 
-```java
 可以看到在@Configuration 上声明式添加了Spring注入注解@Component，
 也就是解释了为什么我们配置了@Configuration会被自动添加到IOC容器内。
 
@@ -115,7 +110,7 @@ WebMvcConfigurerAdapter该抽象类其实里面没有任何的方法实现，
 这一点设计恰到好处的让我们不必去实现那些我们不用的方法，都交由
 WebMvcConfigurerAdapter抽象类空实现，如果我们需要针对具体的某一个方法做出
 逻辑处理，仅仅需要在WebMvcConfigurerAdapter子类中@Override对应方法就可以了。
-```
+
 >配置拦截器
 
 在之前Xml配置形式天下的时候，我们都是在spring-mvc.xml配置文件内添加<mvc:interceptor>
