@@ -24,6 +24,8 @@ header-img: "img/post-bg-kuaidi.jpg"
 
 <!-- Main Content -->
 <div class="container">
+{% if site.github.public_repositories != null %}
+{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse %}
 	<header class="text-center">
         <h1>Open Source Projects</h1>
         <p class="lead">I have <span class="repo-count">{{ sorted_repos.size }}</span> projects on Github</p>
@@ -62,5 +64,6 @@ header-img: "img/post-bg-kuaidi.jpg"
         </a>
         {% endfor %}
     </div>
+{% endif %}
 </div>
 
