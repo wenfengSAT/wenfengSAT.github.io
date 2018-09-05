@@ -104,6 +104,10 @@ element.style {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…M0NC45MzMzMzMzMzMzMzM0LDQ1OS41NzA4MTQyNzQ5NDIxKSI+PC9wb2x5bGluZT48L3N2Zz4=);
 }
 
+.repo-count{
+	font-size: 25px;
+	color: #66ff66;
+}
 </style>
 
 <!-- Page Header -->
@@ -112,7 +116,7 @@ element.style {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <h2>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h2>
                     <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
                 </div>
@@ -126,8 +130,7 @@ element.style {
 {% if site.github.public_repositories != null %}
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse %}
 	<header class="text-center">
-        <h1>Open Source Projects</h1>
-        <p class="lead">I have <span class="repo-count">{{ sorted_repos.size }}</span> projects on Github</p>
+        <p class="lead"><h1>I have <span class="repo-count">{{ sorted_repos.size }}</span> projects on Github</h1></p>
     </header>
     <div class="repo-list">
         <!-- Check here for github metadata -->
