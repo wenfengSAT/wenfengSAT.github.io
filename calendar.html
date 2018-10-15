@@ -1,0 +1,332 @@
+---
+layout: default
+title: ""
+description: ""
+header-img: "img/post-bg-coffee.jpeg"
+---
+
+<style>
+
+</style>
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<body class="mo">
+        <div id="main" class="ui container">
+            <div style="position: absolute; top: -400px;">
+                <img src="assets/images/c.jpeg" />
+            </div>
+            <div class="inner">
+                <div id="inner-top" style="height: 5px; margin-left: -14px; margin-right: -14px;"></div>
+                <div id="site-wrapper" style="display: none;" class="topwrapper">
+                    <h2>诗词周历</h2>
+                    <div class="description">
+                        <i class="teal quote left icon"></i>
+                        精心挑选53首诗词，精彩你的整年生活。常来看看， 愿你举手投足都是诗。 看见一场雨，我希望你会想起野渡横舟，曲中折柳；想起对长亭晚，深巷杏花；想起山色空濛，水光潋滟；想起暮烟枫桥，垂下帘栊。看见湖光山色，就会想起高山寒树，猿啼无绝；想起阴晴众壑，绝巘怪柏；鹤汀凫渚，绛皓驳色；想起水光潋滟，烟雨楼台。 而不是，车要堵了， 我要迟到了。
+                        <i class="teal quote right icon"></i>
+                    </div>
+                    <div class="ui black buttons">
+                        <button onclick="last()" class="ui secondary icon button">
+                            <i class="teal arrow left icon"></i>
+                        </button>
+                        <button onclick="today()" class="ui secondary icon button">
+                            今日
+                        </button>
+                        <button onclick="next()" class="ui secondary icon button">
+                            <i class="teal arrow right icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="skin-wrapper" style="display: none;" class="topwrapper">
+                    <h2>外观选择</h2>
+                    <table id="theme" style="width: 100%;">
+                        <tbody>
+                            <tr onclick="document.body.className = 'mo'; localStorage.setItem('skin', 'mo');">
+                                <td align="right">水墨逢丹青</td>
+                                <td width="50%;"><div style="width: 100%;height: 25px;" class="mo"></div></td>
+                            </tr>
+                            <tr onclick="document.body.className = 'jiangzi'; localStorage.setItem('skin', 'jiangzi');">
+                                <td align="right">绛紫沁素白</td>
+                                <td width="50%;"><div style="width: 100%;height: 25px;" class="jiangzi"></div></td>
+                            </tr>
+                            <tr onclick="document.body.className = 'shenyanhong'; localStorage.setItem('skin', 'shenyanhong');">
+                                <td align="right">深胭红枯绿</td>
+                                <td width="50%;"><div style="width: 100%;height: 25px;" class="shenyanhong"></div></td>
+                            </tr>
+                            <tr onclick="document.body.className = 'labai'; localStorage.setItem('skin', 'labai');">
+                                <td align="right">西窗透蜡白</td>
+                                <td width="50%;"><div style="width: 100%;height: 25px;" class="labai"></div></td>
+                            </tr>
+                            <tr onclick="document.body.className = 'jiehong'; localStorage.setItem('skin', 'jiehong');">
+                                <td align="right">橘红蘸溪湿</td>
+                                <td width="50%;"><div style="width: 100%;height: 25px;" class="jiehong"></div></td>
+                            </tr>
+                            <tr onclick="document.body.className = 'hongzhu'; localStorage.setItem('skin', 'hongzhu');">
+                                <td align="right">红烛昏罗帐</td>
+                                <td width="50%;"><div style="width: 100%;height: 25px;" class="hongzhu"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="social-links-wrapper" style="display: none;" class="topwrapper">
+                    <a href="https://jackeygao.io">
+                        <button class="ui mini orange circular icon button">
+                            <i class="rss square icon"></i>
+                        </button>
+                    </a>
+                    <a href="/cdn-cgi/l/email-protection#3b5c5a54514e554a527b544e4f5754545015585456">
+                        <button class="ui mini red circular icon button">
+                            <i class="mail icon"></i>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jackeygao">
+                        <button class="ui mini grey circular github icon button">
+                          <i class="github icon"></i>
+                        </button>
+                    </a>
+                    <a href="https://twitter.com/JackeyGaoo">
+                        <button class="ui mini circular twitter icon button">
+                          <i class="twitter icon"></i>
+                        </button>
+                    </a>
+                    <button onclick="toggleWechat()" class="ui mini green circular icon button">
+                        <i class="wechat icon"></i>
+                    </button>
+                    
+                    <div id="wx" style="display: none;">
+                        <img src="assets/images/wx.jpeg" />
+                    </div>
+                </div>
+
+                <div id="donation-wrapper" style="display: none;" class="topwrapper">
+                    <div class="ui container" style="text-align: center;">
+                        <div class="description">
+                            <i class="teal quote left icon"></i>
+                            如果觉得此项目对您有用，请随意打赏。
+                            <i class="teal quote right icon"></i>
+                        </div>
+        
+                        <div class="ui buttons">
+                            <button onclick="useWechat()" id="wechat" class="ui active secondary icon button">
+                                微信
+                            </button>
+                            <button onclick="useAlipay()" id="alipay" class="ui secondary icon button">
+                                支付宝
+                            </button>
+                        </div>
+        
+                        <div id="donation-qrcode">
+                            <img id="wechat-qrcode-image" src="assets/images/wechat.png">
+                            <img id="alipay-qrcode-image" src="assets/images/alipay.jpg">
+                            <!-- <img id="donation-qrcode-image" src="/assets/images/wechat.png"> -->
+                        </div>
+                    </div>
+                </div>
+                <div id="triggers-wrapper">
+                    <div class="ui black mini buttons">
+                        <button onclick="toggleById(wrappers, 'site-wrapper')" class="ui secondary icon button">
+                            <i class="list layout icon"></i>
+                        </button>
+                        <button onclick="toggleById(wrappers, 'skin-wrapper')" class="ui secondary icon button">
+                            <i class="snowflake icon"></i>
+                        </button>
+                        <button onclick="toggleById(wrappers, 'social-links-wrapper')" class="ui secondary icon button">
+                            <i class="linkify icon"></i>
+                        </button>
+                        <button onclick="toggleById(wrappers, 'donation-wrapper')" class="ui secondary icon button">
+                            <i class="red heart icon"></i>
+                        </button>
+                    </div>
+                </div> 
+                <div class="today">
+                    <div id="todaySolar" class="solar">2018年01月20日</div>
+                    <div id="todayLunar" class="lunar">腊月初四</div>
+                </div>
+
+                <div class="ui equal width grid">
+                    <div class="thirteen wide column poetry-wrapper" style="padding: 0;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td valign="middle" align="center" class="poetry-content">
+                                    <div id="pcontent" class="uu">
+    别来春半,
+    触目柔肠断。
+    砌下落梅如雪乱，
+    拂了一身还满。
+    雁来音信无凭，
+    路遥归梦难成。
+    离恨恰如春草，
+    更行更远还生。
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="two wide column poetry-title uu" style="padding: 0;">
+                        <div id="ptitle" class="title">清平乐·别来春半</div>
+                        <div id="pauthor" class="author">李煜</div>
+                    </div>
+                </div>
+
+                <div class="calendar-wrapper">
+                    <div class="ui equal width grid">
+                        <div class="calendar row">
+                            <div id="w1" class="column w1">
+                                <div class="solar">1</div>
+                                <div class="lunar">周一</div>
+                            </div>
+                            <div id="w2" class="column w2">
+                                <div class="solar">2</div>
+                                <div class="lunar">周二</div>
+                            </div>
+                            <div id="w3" class="column w3">
+                                <div class="solar">3</div>
+                                <div class="lunar">周三</div>
+                            </div>
+                            <div id="w4" class="column w4">
+                                <div class="solar">4</div>
+                                <div class="lunar">周四</div>
+                            </div>
+                            <div id="w5" class="column w5">
+                                <div class="solar">5</div>
+                                <div class="lunar">周五</div>
+                            </div>
+                            <div id="w6" class="column w6">
+                                <div class="solar">6</div>
+                                <div class="lunar">周六</div>
+                            </div>
+                            <div id="w7" class="column w7">
+                                <div class="solar">7</div>
+                                <div class="lunar">周日</div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/calendar.js"></script>
+    <script src="assets/js/web.js"></script>
+    <script src="assets/js/节日表.js"></script>
+    <script src="assets/js/诗词表.js"></script>
+
+    <script>
+        var wrappers = ["site-wrapper", "social-links-wrapper", "donation-wrapper", "skin-wrapper"]
+        function render(t) {
+            var currentWeekNumber = weekNumber(t);
+            var currentMonday = monDay(t);
+            var currentWeeks = weekDays(currentMonday);
+
+            var day = calendar.solar2lunar(t.getFullYear(), t.getMonth() + 1, t.getDate());
+
+            var lunarDate = day.gzYear + day.IMonthCn + day.IDayCn;
+            var solarDate = day.cYear + '.' + day.cMonth + '.' + day.cDay + '   ' + day.ncWeek;
+
+            document.getElementById("todayLunar").innerHTML = lunarDate
+            document.getElementById("todaySolar").innerHTML = solarDate
+
+            // Poetry
+            var poetry = weekPoetry[currentWeekNumber[1] - 1]
+            if (poetry) {
+                document.getElementById("pcontent").innerHTML = poetry.content
+                document.getElementById("ptitle").innerHTML = poetry.title
+                document.getElementById("pauthor").innerHTML = poetry.author
+            }
+
+            var weekIds = ["w1", "w2", "w3", "w4", "w5", "w6", "w7"]
+
+            for (var i in weekIds) {
+                var id = weekIds[i];
+                var solar = currentWeeks[i];
+                var lunar = calendar.solar2lunar(
+                    solar.getFullYear(), 
+                    solar.getMonth() + 1, 
+                    solar.getDate()
+                );
+
+                var el = document.getElementById(id);
+
+                if (solar.getDate() === t.getDate()) {
+                    el.classList.add("active");
+                    if (lunar.lMonth === 4 && lunar.lDay === 26) {
+                        document.getElementById("pcontent").innerHTML = "祝你生日快乐，\n祝你生日快乐，\n祝你生日快乐，\n祝你生日快乐~~"
+                        document.getElementById("ptitle").innerHTML = "生日歌"
+                        document.getElementById("pauthor").innerHTML = "党中央"
+                    }
+                } else {
+                    el.classList.remove("active")
+                }
+
+                el.getElementsByClassName("solar")[0].innerHTML = lunar.cDay
+
+                var lunarElement = el.getElementsByClassName("lunar")[0]
+
+                var nextDay = new Date(solar.getFullYear(),  solar.getMonth(), solar.getDate())
+                nextDay.setDate(solar.getDate() + 1);
+            
+                var nextDay = calendar.solar2lunar(
+                    nextDay.getFullYear(), 
+                    nextDay.getMonth() + 1, 
+                    nextDay.getDate()
+                );
+
+                if (nextDay.IMonthCn + nextDay.IDayCn === '正月初一') {
+                    lunarElement.innerHTML = '除夕'
+                    continue
+                }
+
+                if (nextDay.Term === '清明') {
+                    lunarElement.innerHTML = '寒食'
+                    continue
+                }
+
+                if (lunar.IMonthCn + lunar.IDayCn in lundarDayMap) {
+                    lunarElement.innerHTML = lundarDayMap[lunar.IMonthCn + lunar.IDayCn]
+                    continue
+                }
+
+                if (lunar.cMonth + '.' + lunar.cDay in solarDayMap) {
+                    lunarElement.innerHTML = solarDayMap[lunar.cMonth + '.' + lunar.cDay]
+                    continue
+                }
+
+                if (lunar.Term) {
+                    lunarElement.innerHTML = lunar.Term
+                } else {
+                    lunarElement.innerHTML = lunar.IDayCn
+                }
+
+            }
+        }
+
+        render(new Date());
+        useWechat();
+
+        var skin = localStorage.getItem('skin');
+
+        if (skin) {
+            document.body.className = skin;
+        } else {
+            localStorage.setItem('skin', 'mo');
+        }
+    </script>
