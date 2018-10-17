@@ -22,14 +22,20 @@ tags:
 
 首先登陆Github账号，进入【Settings】->选择【Developer settings】，这里我们可以看到当前账户所建的回调应用
 
+```
+
 ![Github第三方登录](https://raw.githubusercontent.com/wenfengSAT/data/master/images/blog/4.jpg)
 
+```
 
 点击右上角的【new Auth APP】，按要求填写信息就可以申请一个第三方应用的身份。由于我们是本地调试，
 我们按照本地的测试地址填写相关信息即可：
 
+```
+
 ![Github第三方登录](https://raw.githubusercontent.com/wenfengSAT/data/master/images/blog/5.jpg)
 
+```
 
 完成之后点进去拿到Client Id和Client Secret，这两个信息是用来标识第三方应用身份的相关信息，
 特别注意Client Secret，Client Secret是用来和授权服务器交换验证凭证（Access Token）的，千万不能暴露出去。
