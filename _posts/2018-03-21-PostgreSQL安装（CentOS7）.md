@@ -12,7 +12,7 @@ tags:
 
 >PostgreSQL安装（CentOS7）
 
-{% raw %}
+
 ```hbs
 
 1、yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
@@ -64,11 +64,13 @@ systemctl restart postgresql-9.6.service
 
 
 ```
-{% endraw %}
 
 
-参考：http://blog.csdn.net/DaSo_CSDN/article/details/75330009
-	  http://www.jb51.net/article/104829.htm
+
+参考：http://blog.csdn.net/DaSo_CSDN/article/details/75330009  
+
+	  http://www.jb51.net/article/104829.htm  
+	  
 	  https://www.linuxidc.com/Linux/2017-10/147536.htm
 
 
